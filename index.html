@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cookie&family=Courgette&family=El+Messiri:wght@700&family=Libre+Baskerville&family=Outfit&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="lightbox.min.css">
+    <script type="text/javascript" src="lightbox-plus-jquery.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: arial, sans-serif;
+            text-align: center;
+            background-image: linear-gradient(to bottom right, rgb(236, 119, 119), rgb(221, 221, 12));
+        }
+
+
+
+        .div {
+            margin: 2px;
+            padding: 4px;
+        }
+
+        h1 {
+            margin-bottom: 8px;
+            font-size: 30px;
+            font-family: 'Courgette', cursive;
+        }
+
+        p {
+            line-height: 1;
+        }
+
+        p span {
+            font-size: 25px;
+            font-family: 'Cookie', cursive;
+        }
+
+
+
+        .gallery {
+
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 6%;
+            margin: 60px 4px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 60px;
+
+        }
+
+        .text {
+            width: 100%;
+
+            padding: 10px 6%;
+            margin: 8px 2px;
+
+        }
+
+        .gallery img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: .2s linear;
+            cursor: pointer;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.5);
+        }
+        footer
+        {
+            padding: 20px 10px;
+            width: 100%;
+            height: 20vh;
+            background-image: linear-gradient(to bottom right, rgb(216, 150, 37), rgb(221, 186, 12));
+        }
+        .footer-content h1
+        {
+            margin: 8px 4px;
+            padding: 8px 2px;
+        }
+        .footer-content input
+        {
+            padding: 8px;
+            border-radius:40px;
+            background: transparent;
+            border: 1px solid black; 
+        }
+        .footer-content button
+        {
+            cursor: pointer;
+            padding: 8px;
+            border-radius:40px;
+            background: transparent;
+            border: 1px solid black; 
+        }
+        .footer-content button:hover
+        {
+            color: white;
+            font: bolder;
+            font-size: 15px;
+            background-image: linear-gradient(to bottom right, rgb(192, 128, 18),rgb(221, 110, 12));
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div">
+
+        <h1>Image Manipulation:</h1>
+
+        <p><span>Use CSS to create a basic image gallery
+                with thumbnail images that enlarge
+                when clicked.</span>
+        </p>
+
+
+    </div>
+
+    <div class="text">
+        <h3>EXPLORE MORE</h3>
+    </div>
+
+
+    <div class="gallery">
+
+
+        <a href="img1.png" data-lightbox="mygallery"><img src="img1.png" alt="image1"></a>
+        <a href="img2.png" data-lightbox="mygallery"><img src="img2.png" alt="image1"></a>
+        <a href="img3.png" data-lightbox="mygallery"><img src="img3.png" alt="image1"></a>
+        <a href="img4.png" data-lightbox="mygallery"><img src="img4.png" alt="image1"></a>
+        <a href="img5.png" data-lightbox="mygallery"><img src="img5.png" alt="image1"></a>
+        <a href="img6.png" data-lightbox="mygallery"><img src="img6.png" alt="image1"></a>
+        <a href="img7.png" data-lightbox="mygallery"><img src="img7.png" alt="image1"></a>
+        <a href="img8.png" data-lightbox="mygallery"><img src="img8.png" alt="image1"></a>
+        <a href="img9.png" data-lightbox="mygallery"><img src="img9.png" alt="image1"></a>
+        <a href="img10.png" data-lightbox="mygallery"><img src="img10.png" alt="image1"></a>
+        <a href="img11.png" data-lightbox="mygallery"><img src="img11.png" alt="image1"></a>
+        <a href="img12.png" data-lightbox="mygallery"><img src="img12.png" alt="image1"></a>
+        <a href="img13.png" data-lightbox="mygallery"><img src="img13.png" alt="image1"></a>
+        <a href="img14.png" data-lightbox="mygallery"><img src="img14.png" alt="image1"></a>
+        <a href="img15.png" data-lightbox="mygallery"><img src="img15.png" alt="image1"></a>
+        <a href="img16.png" data-lightbox="mygallery"><img src="img16.png" alt="image1"></a>
+        <a href="img17.png" data-lightbox="mygallery"><img src="img17.png" alt="image1"></a>
+        <a href="img18.png" data-lightbox="mygallery"><img src="img18.png" alt="image1"></a>
+        <a href="img19.png" data-lightbox="mygallery"><img src="img19.png" alt="image1"></a>
+        <a href="img10.png" data-lightbox="mygallery"><img src="img10.png" alt="image1"></a>
+        <a href="img4.png" data-lightbox="mygallery"><img src="img4.png" alt="image1"></a>
+        <a href="img5.png" data-lightbox="mygallery"><img src="img5.png" alt="image1"></a>
+        <a href="img6.png" data-lightbox="mygallery"><img src="img6.png" alt="image1"></a>
+        <a href="img7.png" data-lightbox="mygallery"><img src="img7.png" alt="image1"></a>
+        <a href="img13.png" data-lightbox="mygallery"><img src="img13.png" alt="image1"></a>
+
+    </div>
+
+
+    <footer>
+        <div class="footer-content">
+            <h1>FIND MORE RECIPES</h1>
+            <input type="text" placeholder="I' m Craving">
+            <button type="button">Search</button>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>
